@@ -24,3 +24,19 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+
+
+@font-face {
+    font-family: 'TextBold';
+    src: url("./assets/fonts/TextaAltHeavy.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'TextLight';
+    src: url("./assets/fonts/TextaAltLight.ttf");
+}
+
+*{
+    font: 'TextBold';
+}

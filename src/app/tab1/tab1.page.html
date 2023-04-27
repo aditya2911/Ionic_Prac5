@@ -1,10 +1,4 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
@@ -13,5 +7,30 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <div class="parent">
+
+    <div class="intro">
+      <p>Choose What</p>
+    </div>
+    <div class="subHeading">
+      <p>to learn today ?</p>
+    </div>
+
+
+    <div class="searchBar">
+      <ion-icon size="large" name="search"></ion-icon>
+      <input placeholder="Search...">
+    </div>
+
+
+    <div class="recentContainer">
+      <div class="iconContainer">
+        <div class="image1">
+          <img src="../../assets/images/fish.png">
+        </div>
+        <p >Color</p>
+
+      </div>
+    </div>
+  </div>
 </ion-content>
