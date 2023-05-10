@@ -1,10 +1,19 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
+    <ion-buttons>
+      <ion-button slot="start">
+        <ion-icon name="chevron-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
+
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
@@ -13,5 +22,26 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+
+
+  <div class="headerContainer">
+    <img src="../../assets/images/monster_search.png" alt="">
+    <div class="textContainer">
+      <p>Choose</p>
+
+      <p>the lesson</p>
+    </div>
+  </div>
+  
+  <div class="cardItems">
+    <img src="../../assets/images/bee_white.png" alt="">
+    <p class="header">Insect Species</p>
+    <p class="sub-header">05 / 20 words</p>
+  </div>
+
+  <div class="cardItems  " style="background-color: white;">
+    <img src="../../assets/images/lion_grey.png" alt="">
+    <p class="header">Wild Animals</p>
+    <p class="sub-header">05 / 20 words</p>
+  </div>
 </ion-content>

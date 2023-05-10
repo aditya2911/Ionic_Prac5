@@ -11,11 +11,14 @@ export class AppComponent {
     private platform:Platform,
     public router:Router,
   ) {
-    this.initializeApp();
+
+    this.platform.ready().then(()=>{
+      setTimeout(() => {
+        this.router.navigateByUrl('test');
+      }, 1800);
+    })
+  
   }
-  initializeApp() {
-      this.platform.ready().then(()=>{
-        this.router.navigateByUrl('tabs ');
-      })
-  }
+
+  
 }

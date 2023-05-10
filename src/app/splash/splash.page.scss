@@ -1,0 +1,47 @@
+ion-content{
+   --background:white
+   
+}
+
+
+@keyframes bounce-top {
+    0% {
+      transform: translateY(0);
+      animation-timing-function: ease-out;
+    }
+    50% {
+      transform: translateY(-10%);
+      animation-timing-function: ease-in;
+    }
+    75% {
+      transform: translateY(3%);
+      animation-timing-function: ease-out;
+    }
+    100% {
+      transform: translateY(0);
+      animation-timing-function: ease-in-out;
+    }
+  }
+  
+
+:root{
+    overflow: hidden;
+}
+.container{
+    
+    animation-name: bounce-top;
+    animation-duration: 1s;
+    img{
+        height: 10rem;
+        margin-top: 60%;
+    }
+
+    p{
+        color: black;
+        font-size: 2rem;
+        padding: 0;
+        margin: 0;
+     letter-spacing: 0.8rem;
+        font-family: "TextBold";
+    }
+}
