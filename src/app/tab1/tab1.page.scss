@@ -73,6 +73,9 @@ line-height: 2rem;
   .image1{
     width: 100%;
     display: flex;
+    display: flex;
+justify-content: center;
+align-items: center;
   }
 
   .image1>img{
@@ -84,7 +87,7 @@ height: 100%;
   
 
   .image1{
-    background:green;
+    background:#f4f4f2;
     height: 100%;
     width: 4.5rem;
     border-radius: 1000px;    
@@ -93,6 +96,8 @@ height: 100%;
 
 .image1>img{
     object-fit:cover ;
+    width: 60%;
+height: 60%;
 }
 
 ion-grid{
