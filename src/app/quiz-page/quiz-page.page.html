@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title style="text-align: center; color: #333;">
+      Quiz 
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-radio-group [(ngModel)]="selectedAnswer">
+      <ion-list-header style="font-weight: bold; font-size: 18px; margin-bottom: 10px;">
+        {{ currentQuestion.question }}
+      </ion-list-header>
+      
+      <ion-item *ngFor="let choice of currentQuestion.choices" style="padding: 10px; border-bottom: 1px solid #ccc;">
+        <ion-label style="color: #333;">{{ choice }}</ion-label>
+        <ion-radio slot="start" value="{{ choice }}"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+  
+  <ion-button expand="full" (click)="checkAnswer()" style="margin-top: 20px; background-color: #ff4081; color: #fff;">
+    Next Question
+  </ion-button>
+</ion-content>

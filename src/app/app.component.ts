@@ -15,7 +15,7 @@ export class AppComponent {
     this.platform.ready().then(()=>{
       setTimeout(() => {
         this.router.navigateByUrl('test');
-      }, 1800);
+      }, 18000);
     })
   
   }

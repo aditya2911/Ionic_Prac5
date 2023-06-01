@@ -13,7 +13,11 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./splash/splash.module').then( m => m.SplashPageModule)
+  },  {
+    path: 'quiz-page',
+    loadChildren: () => import('./quiz-page/quiz-page.module').then( m => m.QuizPagePageModule)
   },
+
 
 
 
